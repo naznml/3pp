@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Педагогика | 3-нұсқа</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #edf4ff;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.progressBox {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.progressTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 14px;
+    background: #dbe6ff;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #1565c0, #42a5f5);
+    transition: 0.3s;
+}
+
+.question {
+    background: white;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.number {
+    display: inline-block;
+    background: #1565c0;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.option {
+    display: block;
+    padding: 14px;
+    border: 2px solid #dce6f5;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    line-height: 1.5;
+}
+
+.option:hover {
+    background: #f4f8ff;
+    border-color: #1565c0;
+}
+
+.option input {
+    margin-right: 10px;
+    accent-color: #1565c0;
+}
+
+.correct {
+    background: #e8f8ed !important;
+    border-color: #27ae60 !important;
+}
+
+.wrong {
+    background: #ffeaea !important;
+    border-color: #e74c3c !important;
+}
+
+.explanation {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: #f3f8ff;
+    border-left: 5px solid #1565c0;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.result {
+    display: none;
+    margin: 30px 0;
+    padding: 25px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    font-size: 34px;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 15px;
+    background: #1565c0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Педагогика</h1>
+
+<p>Магистратураға дайындық тесті — 3-нұсқа</p>
+
+</header>
+
+<div class="container">
+
+<div class="progressBox">
+
+<div class="progressTitle">
+Орындалған сұрақтар:
+<span id="answered">0</span>/30
+</div>
+
+<div class="progress">
+<div class="progressFill" id="progressFill"></div>
+</div>
+
+</div>
+
+<div id="quiz">
+
+<!-- ========================= -->
+<!-- СҰРАҚ 1 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">1-сұрақ</div>
+
+<div class="title">
+«Баланы тәрбиелеу үшін әрбір тәрбиешінің өзі тәрбиелі болуы керек. Себебі, айтып ұқтырғаннан гөрі, бала көргеніне көп еліктегіш болып келеді. Солай болған соң балаға не жақсы мінез болсын, іспен көрсету керек» – ойды ұстанған:
+</div>
+
+<label class="option">
+<input type="radio" name="q1" value="A">
+A) А. Байтұрсынов
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="B">
+B) М. Жұмабаев
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="C">
+C) М. Дулатов
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="D">
+D) Ж. Аймауытов
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="E">
+E) М. Шоқай
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) М. Жұмабаев
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Бұл ой Мағжан Жұмабаевтың «Педагогика» еңбегіндегі тәрбиешінің жеке үлгісі мен тәрбиелілігінің бала тәрбиесіндегі маңызын білдіреді.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 2 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">2-сұрақ</div>
+
+<div class="title">
+Танымға жету мен оны құру тәсілі:
+</div>
+
+<label class="option">
+<input type="radio" name="q2" value="A">
+A) әдіснама
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="B">
+B) болжам
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="C">
+C) қағида
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="D">
+D) теория
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="E">
+E) тәжірибе
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) әдіснама
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Әдіснама – ғылыми танымға жетудің, білімді құрудың және зерттеу іс-әрекетін ұйымдастырудың тәсілдері мен қағидалары туралы ілім.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 3 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">3-сұрақ</div>
+
+<div class="title">
+Баланың дамуындағы ерекше орны бар, «өтпелі», «бетбұрыс», «қиын» кезең деген атаулармен сипатталатын – ең тынымсыз, ең қиын, ең қызба жас кезеңі:
+</div>
+
+<label class="option">
+<input type="radio" name="q3" value="A">
+A) жасөспірімдік
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="B">
+B) мектепке дейінгі балалық шақ
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="C">
+C) жастық
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="D">
+D) бастауыш мектеп жасы
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="E">
+E) жеткіншектік
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) жеткіншектік
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Жеткіншектік кезең балалық шақтан ересектікке өту кезеңі болғандықтан, ол «өтпелі», «бетбұрыс» және «қиын» жас кезеңі деп сипатталады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 4 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">4-сұрақ</div>
+
+<div class="title">
+Субъектінің қойылған мақсатқа жету үшін оның ішкі және сыртқы ресурстарын тиімді пайдаланатын білім берудің нәтижесі:
+</div>
+
+<label class="option">
+<input type="radio" name="q4" value="A">
+A) мәдениеттілік
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="B">
+B) бағыттылық
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="C">
+C) құзыреттілік
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="D">
+D) шеберлік
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="E">
+E) құзырлық
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+C) құзыреттілік
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Құзыреттілік – адамның қойылған мақсатқа жету үшін білімін, тәжірибесін, қабілеттерін және ішкі-сыртқы ресурстарын тиімді пайдалана алуымен сипатталатын білім беру нәтижесі.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 5 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">5-сұрақ</div>
+
+<div class="title">
+Білім беру ұғымының 4 негізгі аспектілері:
+</div>
+
+<label class="option">
+<input type="radio" name="q5" value="A">
+A) мазмұн, міндет, мақсат, нәтиже
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="B">
+B) құндылық, жүйе, үдеріс, нәтиже
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="C">
+C) мәні, пәні, үрдіс, іс-әрекет
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="D">
+D) мәні, мазмұн, мақсат, құндылық
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="E">
+E) қағида, әдіс, жүйе, бағдар
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) құндылық, жүйе, үдеріс, нәтиже
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Білім беру төрт негізгі аспектіде қарастырылады: құндылық ретінде, жүйе ретінде, үдеріс ретінде және білім беру нәтижесі ретінде.
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- СҰРАҚ 6 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">6-сұрақ</div>
+
+<div class="title">
+Бағдарлама материалының мазмұнына, мектептің материалдық базасына, оқушылардың оқу материалы мен жұмысының сипатына сүйене отырып анықталады:
+</div>
+
+<label class="option">
+<input type="radio" name="q6" value="A">
+A) сабақтың типі
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="B">
+B) сабақтың әдісі
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="C">
+C) сабақтың мазмұны
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="D">
+D) сабақтың міндеті
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="E">
+E) сабақтың мақсаты
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) сабақтың мақсаты
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Сабақтың мақсаты бағдарлама материалының мазмұнына, мектептің материалдық мүмкіндіктеріне, оқушылардың дайындық деңгейіне және орындалатын жұмыстың сипатына қарай анықталады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 7 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">7-сұрақ</div>
+
+<div class="title">
+PISA:
+</div>
+
+<label class="option">
+<input type="radio" name="q7" value="A">
+A) халықаралық ересектер сауаттылығын зерттеу
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="B">
+B) жаратылыстану пәндері бойынша халықаралық зерттеу
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="C">
+C) халықаралық тестілеу бағдарламасы
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="D">
+D) халықаралық тілдік деңгейін анықтау
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="E">
+E) математика пәні бойынша халықаралық зерттеу
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+C) халықаралық тестілеу бағдарламасы
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+PISA – оқушылардың оқу, математикалық және жаратылыстану-ғылыми сауаттылығын халықаралық деңгейде бағалайтын зерттеу бағдарламасы.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 8 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">8-сұрақ</div>
+
+<div class="title">
+Балаға табиғат және қоғам туралы ғылыми білімдерді беріп, оны жалған көзқарастардан арылтып, болмысты тану әдістерімен қаруландыру қызметі:
+</div>
+
+<label class="option">
+<input type="radio" name="q8" value="A">
+A) ағарту
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="B">
+B) прогностикалық
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="C">
+C) аналитикалық
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="D">
+D) ұйымдастырушылық
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="E">
+E) тәрбиелік
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) ағарту
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Ағарту қызметі балаға табиғат пен қоғам туралы ғылыми білім беруге, оның дүниетанымын қалыптастыруға және жалған көзқарастардан арылтуға бағытталады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 9 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">9-сұрақ</div>
+
+<div class="title">
+Мұғалімнің дайын ақпаратты оқушыларға әр түрлі тәсілдермен жеткізуінен, ал оқушылардың оны қабылдап, есте сақтауынан тұратын әдіс:
+</div>
+
+<label class="option">
+<input type="radio" name="q9" value="A">
+A) бақылау
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="B">
+B) ынталандыру
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="C">
+C) репродуктивті
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="D">
+D) хабарлама үлгі
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="E">
+E) түсіндірмелі-иллюстративті
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) түсіндірмелі-иллюстративті
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Түсіндірмелі-иллюстративті әдісте мұғалім дайын білімді ауызша түсіндіру, оқулық, көрнекілік және басқа құралдар арқылы ұсынады, ал оқушылар оны қабылдап, түсініп және есте сақтайды.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 10 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">10-сұрақ</div>
+
+<div class="title">
+Табысты шығармашылық іс-әрекет үшін практика жүзінде байқалған өзінің білім, іскерлік, тәжірибесін іске асыра алу қабілетін көрсететін аспекті:
+</div>
+
+<label class="option">
+<input type="radio" name="q10" value="A">
+A) жүйелік
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="B">
+B) когнитивтік
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="C">
+C) мотивациялық
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="D">
+D) нәтижелік
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="E">
+E) құндылық
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+D) нәтижелік
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Нәтижелік аспект адамның меңгерген білімі, іскерлігі мен тәжірибесін практикалық және шығармашылық іс-әрекетте тиімді қолдана алу қабілетін көрсетеді.
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- СҰРАҚ 11 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">11-сұрақ</div>
+
+<div class="title">
+Тәрбие ісінің қоғамның әлеуметтік-экономикалық қажетін өтеуге сай келуі, оның демократиялық принципті іске асыруы, адам құқығын қорғау мәселелерімен тығыз байланыстылығы:
+</div>
+
+<label class="option">
+<input type="radio" name="q11" value="A">
+A) тәрбиенің заңдылықтары
+</label>
+
+<label class="option">
+<input type="radio" name="q11" value="B">
+B) тәрбиенің құралдары
+</label>
+
+<label class="option">
+<input type="radio" name="q11" value="C">
+C) тәрбиенің ережелері
+</label>
+
+<label class="option">
+<input type="radio" name="q11" value="D">
+D) тәрбиенің талаптары
+</label>
+
+<label class="option">
+<input type="radio" name="q11" value="E">
+E) тәрбиенің міндеттері
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) тәрбиенің заңдылықтары
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Тәрбиенің қоғамның әлеуметтік-экономикалық қажеттіліктеріне сәйкес келуі, демократиялық қағидаларды жүзеге асыруы және адам құқықтарын қорғаумен байланысы тәрбие үдерісінің негізгі заңдылықтарына жатады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 12 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">12-сұрақ</div>
+
+<div class="title">
+Білім беру құндылық ретінде:
+</div>
+
+<label class="option">
+<input type="radio" name="q12" value="A">
+A) экономикалық, мәдени, интеллектуалдық
+</label>
+
+<label class="option">
+<input type="radio" name="q12" value="B">
+B) танымдық, дамушылық, біліктілік
+</label>
+
+<label class="option">
+<input type="radio" name="q12" value="C">
+C) мемлекеттік, қоғамдық, тұлғалық
+</label>
+
+<label class="option">
+<input type="radio" name="q12" value="D">
+D) өркениеттік, дербестік, ұйымдық
+</label>
+
+<label class="option">
+<input type="radio" name="q12" value="E">
+E) теориялық, құзыреттілік, кәсібилік
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+C) мемлекеттік, қоғамдық, тұлғалық
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Білім беру құндылық ретінде үш деңгейде қарастырылады: мемлекеттік құндылық, қоғамдық құндылық және жеке тұлғалық құндылық.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 13 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">13-сұрақ</div>
+
+<div class="title">
+Педагогикалық процестің оқу және оқудан тыс саласының бірлігі жеке тұлғаны қалыптастырудың шарты:
+</div>
+
+<label class="option">
+<input type="radio" name="q13" value="A">
+A) пәнаралық жүйе
+</label>
+
+<label class="option">
+<input type="radio" name="q13" value="B">
+B) пәнаралық байланыс
+</label>
+
+<label class="option">
+<input type="radio" name="q13" value="C">
+C) педагогикалық жоба
+</label>
+
+<label class="option">
+<input type="radio" name="q13" value="D">
+D) педагогикалық әрекет
+</label>
+
+<label class="option">
+<input type="radio" name="q13" value="E">
+E) педагогикалық қабілет
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) пәнаралық байланыс
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Пәнаралық байланыс оқу пәндері мен оқудан тыс тәрбие жұмыстарының өзара бірлігін қамтамасыз етіп, білім алушының жан-жақты тұлғалық қалыптасуына ықпал етеді.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 14 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">14-сұрақ</div>
+
+<div class="title">
+Баланың жеке басын қалыптастыру, оның қызығуы мен қабілетін дамыту отбасындағы ересектердің өмірлік тәжірибелері арқылы жүзеге асыру қызметі:
+</div>
+
+<label class="option">
+<input type="radio" name="q14" value="A">
+A) психологиялық реттеушілік
+</label>
+
+<label class="option">
+<input type="radio" name="q14" value="B">
+B) отбасының тәрбие берушілік
+</label>
+
+<label class="option">
+<input type="radio" name="q14" value="C">
+C) отбасының ұрпақ жалғастырушылық
+</label>
+
+<label class="option">
+<input type="radio" name="q14" value="D">
+D) қарым-қатынастық
+</label>
+
+<label class="option">
+<input type="radio" name="q14" value="E">
+E) отбасының әлеуметтендіру
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) отбасының тәрбие берушілік
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Отбасының тәрбие берушілік қызметі баланың жеке тұлғасын қалыптастыруға, оның қызығушылықтары мен қабілеттерін дамытуға және үлкендердің өмірлік тәжірибесін меңгеруіне бағытталады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 15 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">15-сұрақ</div>
+
+<div class="title">
+Салауатты өмір салты, дене дамуы және психологиялық денсаулық сақтау дағдыларын ойдағыдай қалыптастырудағы тәрбие:
+</div>
+
+<label class="option">
+<input type="radio" name="q15" value="A">
+A) отбасылық
+</label>
+
+<label class="option">
+<input type="radio" name="q15" value="B">
+B) дене
+</label>
+
+<label class="option">
+<input type="radio" name="q15" value="C">
+C) экологиялық
+</label>
+
+<label class="option">
+<input type="radio" name="q15" value="D">
+D) еңбек
+</label>
+
+<label class="option">
+<input type="radio" name="q15" value="E">
+E) зияткерлік
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) дене
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Дене тәрбиесі салауатты өмір салтын қалыптастыруға, дене дамуын қамтамасыз етуге, денсаулықты нығайтуға және психологиялық саулықты сақтауға бағытталады.
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- СҰРАҚ 16 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">16-сұрақ</div>
+
+<div class="title">
+Заттар мен құбылыстардың жалпылығын айқындау үшін қолданылатын әдіс:
+</div>
+
+<label class="option">
+<input type="radio" name="q16" value="A">
+A) ұқсастыру
+</label>
+
+<label class="option">
+<input type="radio" name="q16" value="B">
+B) болжамдау
+</label>
+
+<label class="option">
+<input type="radio" name="q16" value="C">
+C) жобалау
+</label>
+
+<label class="option">
+<input type="radio" name="q16" value="D">
+D) талдау
+</label>
+
+<label class="option">
+<input type="radio" name="q16" value="E">
+E) жүйелеу
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) ұқсастыру
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Ұқсастыру әдісі заттар мен құбылыстардың ортақ, ұқсас белгілерін анықтап, оларды өзара салыстыруға мүмкіндік береді.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 17 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">17-сұрақ</div>
+
+<div class="title">
+Оқыту үдерісінің құрамдық бөліктерінің арасындағы объективті, мәнді, тұрақты, қайталанатын байланыстар:
+</div>
+
+<label class="option">
+<input type="radio" name="q17" value="A">
+A) оқыту заңдылықтары
+</label>
+
+<label class="option">
+<input type="radio" name="q17" value="B">
+B) оқыту әдіснамалары
+</label>
+
+<label class="option">
+<input type="radio" name="q17" value="C">
+C) оқыту принциптері
+</label>
+
+<label class="option">
+<input type="radio" name="q17" value="D">
+D) оқыту түрлері
+</label>
+
+<label class="option">
+<input type="radio" name="q17" value="E">
+E) оқыту технологиялары
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) оқыту заңдылықтары
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Оқыту заңдылықтары – оқыту үдерісінің құрамдық бөліктері арасындағы объективті, тұрақты, мәнді және қайталанатын байланыстар.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 18 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">18-сұрақ</div>
+
+<div class="title">
+Баяндаудың монологтік формасы:
+</div>
+
+<label class="option">
+<input type="radio" name="q18" value="A">
+A) кеңес беру
+</label>
+
+<label class="option">
+<input type="radio" name="q18" value="B">
+B) анықтау
+</label>
+
+<label class="option">
+<input type="radio" name="q18" value="C">
+C) зерттеу
+</label>
+
+<label class="option">
+<input type="radio" name="q18" value="D">
+D) жетілдіру
+</label>
+
+<label class="option">
+<input type="radio" name="q18" value="E">
+E) түсіндіру
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) түсіндіру
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Түсіндіру – мұғалімнің оқу материалын оқушыларға жүйелі түрде ауызша жеткізетін баяндаудың монологтік формасы.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 19 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">19-сұрақ</div>
+
+<div class="title">
+Адамның болып жатқан жағдаятты әріптесінің, яғни қарым-қатынас жасап тұрған адамның көзімен көріп, түсіне білуі:
+</div>
+
+<label class="option">
+<input type="radio" name="q19" value="A">
+A) ынталылық
+</label>
+
+<label class="option">
+<input type="radio" name="q19" value="B">
+B) антипатия
+</label>
+
+<label class="option">
+<input type="radio" name="q19" value="C">
+C) гностика
+</label>
+
+<label class="option">
+<input type="radio" name="q19" value="D">
+D) эмпатия
+</label>
+
+<label class="option">
+<input type="radio" name="q19" value="E">
+E) рефлексия
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+D) эмпатия
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Эмпатия – басқа адамның сезімін, жағдайын және көзқарасын түсініп, оқиғаны оның тұрғысынан қабылдай білу қабілеті.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 20 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">20-сұрақ</div>
+
+<div class="title">
+Мұғалім, тәрбиешінің идеалды үлгісін анықтауда қолданылатын әдіс:
+</div>
+
+<label class="option">
+<input type="radio" name="q20" value="A">
+A) портфолио
+</label>
+
+<label class="option">
+<input type="radio" name="q20" value="B">
+B) профессиограмма
+</label>
+
+<label class="option">
+<input type="radio" name="q20" value="C">
+C) биография
+</label>
+
+<label class="option">
+<input type="radio" name="q20" value="D">
+D) циклограмма
+</label>
+
+<label class="option">
+<input type="radio" name="q20" value="E">
+E) түйіндеме
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+B) профессиограмма
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Профессиограмма белгілі бір мамандық иесіне қойылатын кәсіби, тұлғалық және психологиялық талаптардың сипаттамасын береді. Ол мұғалімнің идеалды кәсіби үлгісін анықтауда қолданылады.
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- СҰРАҚ 21 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">21-сұрақ</div>
+
+<div class="title">
+Кәсіби өзін-өзі тәрбиелеу:
+</div>
+
+<label class="option">
+<input type="radio" name="q21" value="A">
+A) қазіргі мұғалім тұлғасын дамыту талабы
+</label>
+
+<label class="option">
+<input type="radio" name="q21" value="B">
+B) қазіргі мұғалім тұлғасын дамыту деңгейі
+</label>
+
+<label class="option">
+<input type="radio" name="q21" value="C">
+C) қазіргі мұғалім тұлғасын дамыту позициясы
+</label>
+
+<label class="option">
+<input type="radio" name="q21" value="D">
+D) қазіргі мұғалім тұлғасын дамыту формасы
+</label>
+
+<label class="option">
+<input type="radio" name="q21" value="E">
+E) қазіргі мұғалім тұлғасын дамыту факторы
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) қазіргі мұғалім тұлғасын дамыту факторы
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Кәсіби өзін-өзі тәрбиелеу мұғалімнің кәсіби және тұлғалық қасиеттерін саналы түрде жетілдіруге бағытталады. Сондықтан ол қазіргі мұғалім тұлғасын дамытудың маңызды факторы болып табылады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 22 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">22-сұрақ</div>
+
+<div class="title">
+Мақсат, принциптер, мазмұн, әдістер, құралдар, форма:
+</div>
+
+<label class="option">
+<input type="radio" name="q22" value="A">
+A) педагогикалық үдерістің педагогикалық құрылымы
+</label>
+
+<label class="option">
+<input type="radio" name="q22" value="B">
+B) педагогикалық үдерістің әлеуметтік құрылымы
+</label>
+
+<label class="option">
+<input type="radio" name="q22" value="C">
+C) педагогикалық үдерістің әдіснамалық құрылымы
+</label>
+
+<label class="option">
+<input type="radio" name="q22" value="D">
+D) педагогикалық үдерістің психологиялық құрылымы
+</label>
+
+<label class="option">
+<input type="radio" name="q22" value="E">
+E) педагогикалық үдерістің философиялық құрылымы
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+A) педагогикалық үдерістің педагогикалық құрылымы
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Педагогикалық үдерістің педагогикалық құрылымына мақсат, принциптер, мазмұн, әдістер, құралдар және ұйымдастыру формалары кіреді.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 23 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">23-сұрақ</div>
+
+<div class="title">
+Жеке адамның санасын (ұғым, пайымдау, пікірін айту, баға беру, сендіру) қалыптастыру әдістері:
+</div>
+
+<label class="option">
+<input type="radio" name="q23" value="A">
+A) тәрбиедегі ынталандыру
+</label>
+
+<label class="option">
+<input type="radio" name="q23" value="B">
+B) іс-әрекетті ұйымдастыру
+</label>
+
+<label class="option">
+<input type="radio" name="q23" value="C">
+C) өзін-өзі байқау және бақылау
+</label>
+
+<label class="option">
+<input type="radio" name="q23" value="D">
+D) қоғамдық мінез-құлықты қалыптастыру
+</label>
+
+<label class="option">
+<input type="radio" name="q23" value="E">
+E) адамгершілік сананы қалыптастыру
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) адамгершілік сананы қалыптастыру
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Ұғым қалыптастыру, пайымдау, пікір айту, баға беру және сендіру тұлғаның адамгершілік санасын қалыптастыру әдістеріне жатады.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 24 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">24-сұрақ</div>
+
+<div class="title">
+Тұлғаның ішкі және сыртқы, басқарылатын және басқарылмайтын барлық факторлардың ықпалымен адамның әлеуметтік тіршілік иесі ретінде дамып жетілуі:
+</div>
+
+<label class="option">
+<input type="radio" name="q24" value="A">
+A) өсуі
+</label>
+
+<label class="option">
+<input type="radio" name="q24" value="B">
+B) қабілеттілігі
+</label>
+
+<label class="option">
+<input type="radio" name="q24" value="C">
+C) бақылануы
+</label>
+
+<label class="option">
+<input type="radio" name="q24" value="D">
+D) дағдылануы
+</label>
+
+<label class="option">
+<input type="radio" name="q24" value="E">
+E) қалыптасуы
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) қалыптасуы
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Тұлғаның қалыптасуы – ішкі және сыртқы, басқарылатын және басқарылмайтын факторлардың ықпалымен адамның әлеуметтік тұлға ретінде дамып жетілу процесі.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 25 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">25-сұрақ</div>
+
+<div class="title">
+Әртүрлі тарихи дәуірлердегі педагогикалық идеяларды, білім беру мен тәрбиенің даму тарихын зерттейтін сала:
+</div>
+
+<label class="option">
+<input type="radio" name="q25" value="A">
+A) жас ерекшелік педагогикасы
+</label>
+
+<label class="option">
+<input type="radio" name="q25" value="B">
+B) тәрбие теориясы
+</label>
+
+<label class="option">
+<input type="radio" name="q25" value="C">
+C) педагогика тарихы
+</label>
+
+<label class="option">
+<input type="radio" name="q25" value="D">
+D) жалпы педагогика
+</label>
+
+<label class="option">
+<input type="radio" name="q25" value="E">
+E) кәсіптік педагогика
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+C) педагогика тарихы
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Педагогика тарихы әртүрлі тарихи кезеңдердегі педагогикалық идеялардың, мектептің, білім беру мен тәрбие жүйелерінің қалыптасуы және даму жолдарын зерттейді.
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- СҰРАҚ 26 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">26-сұрақ</div>
+
+<div class="title">
+Мұғалімдер мен оқушылардың өзара қарым-қатынас саласын қамтитын іс-әрекет:
+</div>
+
+<label class="option">
+<input type="radio" name="q26" value="A">
+A) конструктивтік
+</label>
+
+<label class="option">
+<input type="radio" name="q26" value="B">
+B) гностикалық
+</label>
+
+<label class="option">
+<input type="radio" name="q26" value="C">
+C) ұйымдастырушылық
+</label>
+
+<label class="option">
+<input type="radio" name="q26" value="D">
+D) коммуникативтік
+</label>
+
+<label class="option">
+<input type="radio" name="q26" value="E">
+E) басқару
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+D) коммуникативтік
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Коммуникативтік іс-әрекет мұғалім мен оқушының өзара қарым-қатынасын, ақпарат алмасуын және педагогикалық байланысын қамтиды.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 27 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">27-сұрақ</div>
+
+<div class="title">
+Ғылыми тұрғыда негізделген іс-әрекеттер, оқыту ережелері мен әдіс-тәсілдерінің жиынтығы:
+</div>
+
+<label class="option">
+<input type="radio" name="q27" value="A">
+A) аспект
+</label>
+
+<label class="option">
+<input type="radio" name="q27" value="B">
+B) заңдылық
+</label>
+
+<label class="option">
+<input type="radio" name="q27" value="C">
+C) технология
+</label>
+
+<label class="option">
+<input type="radio" name="q27" value="D">
+D) әдіснама
+</label>
+
+<label class="option">
+<input type="radio" name="q27" value="E">
+E) қағида
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+C) технология
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Педагогикалық технология – ғылыми тұрғыдан негізделген іс-әрекеттердің, оқыту ережелерінің, әдістері мен тәсілдерінің жүйелі жиынтығы.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 28 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">28-сұрақ</div>
+
+<div class="title">
+Мұғалім мен білім алушының арасында жүйелі жүргізілетін мақсатты әрекет жасау нәтижесінде оқушының білім, іскерлік, дағдысы, танымдық шығармашылық белсенділігін қалыптастыру процесі:
+</div>
+
+<label class="option">
+<input type="radio" name="q28" value="A">
+A) үйрету
+</label>
+
+<label class="option">
+<input type="radio" name="q28" value="B">
+B) меңгеру
+</label>
+
+<label class="option">
+<input type="radio" name="q28" value="C">
+C) дамыту
+</label>
+
+<label class="option">
+<input type="radio" name="q28" value="D">
+D) білім беру
+</label>
+
+<label class="option">
+<input type="radio" name="q28" value="E">
+E) оқыту
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+E) оқыту
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Оқыту – мұғалім мен білім алушының жүйелі және мақсатты өзара әрекеті арқылы білім, білік, дағды мен танымдық-шығармашылық белсенділікті қалыптастыру процесі.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 29 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">29-сұрақ</div>
+
+<div class="title">
+Адамның өзін қоршаған ортамен қарым-қатынасқа түсе алу қабілеті және сол ортаға мүмкіндігінше жылдам бейімделе білуі мен әрекеттесу деңгейінің көрсеткіші:
+</div>
+
+<label class="option">
+<input type="radio" name="q29" value="A">
+A) компьютерлік сауаттылық
+</label>
+
+<label class="option">
+<input type="radio" name="q29" value="B">
+B) грамматикалық сауаттылық
+</label>
+
+<label class="option">
+<input type="radio" name="q29" value="C">
+C) математикалық сауаттылық
+</label>
+
+<label class="option">
+<input type="radio" name="q29" value="D">
+D) функционалды сауаттылық
+</label>
+
+<label class="option">
+<input type="radio" name="q29" value="E">
+E) ақпараттық сауаттылық
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+D) функционалды сауаттылық
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Функционалды сауаттылық – адамның алған білімі мен дағдыларын күнделікті өмірде қолдана алуы, қоршаған ортамен әрекеттесуі және жаңа жағдайларға бейімделуі.
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- СҰРАҚ 30 -->
+<!-- ========================= -->
+
+<div class="question">
+
+<div class="number">30-сұрақ</div>
+
+<div class="title">
+Жастардың тұлғалық қасиеттерін дамыту, олардың жоғары адамгершілік ұстанымдарын қалыптастыру, өмірге, еңбекке баулу:
+</div>
+
+<label class="option">
+<input type="radio" name="q30" value="A">
+A) тәрбиенің қағидасы
+</label>
+
+<label class="option">
+<input type="radio" name="q30" value="B">
+B) тәрбиенің объектісі
+</label>
+
+<label class="option">
+<input type="radio" name="q30" value="C">
+C) тәрбиенің заңдылығы
+</label>
+
+<label class="option">
+<input type="radio" name="q30" value="D">
+D) тәрбиенің мақсаты
+</label>
+
+<label class="option">
+<input type="radio" name="q30" value="E">
+E) тәрбиенің жүйесі
+</label>
+
+<div class="explanation">
+
+<b>Дұрыс жауап:</b>
+D) тәрбиенің мақсаты
+
+<br><br>
+
+<b>Түсіндірме:</b>
+
+Тәрбиенің мақсаты – тұлғалық қасиеттері дамыған, адамгершілік ұстанымдары қалыптасқан, өмірге және еңбекке дайын тұлға тәрбиелеу.
+
+</div>
+
+</div>
+</div>
+
+<div class="result" id="result">
+    <h2 id="score"></h2>
+    <p id="message"></p>
+</div>
+
+<button id="submitBtn" type="button">
+    Нәтижені көрсету
+</button>
+
+</div>
+
+<script>
+
+const correctAnswers = {
+    q1: "B",
+    q2: "A",
+    q3: "E",
+    q4: "C",
+    q5: "B",
+    q6: "E",
+    q7: "C",
+    q8: "A",
+    q9: "E",
+    q10: "D",
+    q11: "A",
+    q12: "C",
+    q13: "B",
+    q14: "B",
+    q15: "B",
+    q16: "A",
+    q17: "A",
+    q18: "E",
+    q19: "D",
+    q20: "B",
+    q21: "E",
+    q22: "A",
+    q23: "E",
+    q24: "E",
+    q25: "C",
+    q26: "D",
+    q27: "C",
+    q28: "E",
+    q29: "D",
+    q30: "D"
+};
+
+const totalQuestions = 30;
+
+const answeredElement = document.getElementById("answered");
+const progressFill = document.getElementById("progressFill");
+const submitBtn = document.getElementById("submitBtn");
+const result = document.getElementById("result");
+const scoreElement = document.getElementById("score");
+const messageElement = document.getElementById("message");
+
+function updateProgress() {
+    let answered = 0;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        const selected = document.querySelector(
+            `input[name="q${i}"]:checked`
+        );
+
+        if (selected) {
+            answered++;
+        }
+    }
+
+    answeredElement.textContent = answered;
+
+    const percentage = (answered / totalQuestions) * 100;
+    progressFill.style.width = percentage + "%";
+}
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", updateProgress);
+});
+
+submitBtn.addEventListener("click", function () {
+    let score = 0;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        const questionName = `q${i}`;
+
+        const firstInput = document.querySelector(
+            `input[name="${questionName}"]`
+        );
+
+        if (!firstInput) {
+            continue;
+        }
+
+        const questionBlock = firstInput.closest(".question");
+        const options = questionBlock.querySelectorAll(".option");
+
+        const selected = questionBlock.querySelector(
+            `input[name="${questionName}"]:checked`
+        );
+
+        options.forEach(option => {
+            option.classList.remove("correct", "wrong");
+
+            const input = option.querySelector("input");
+
+            if (input.value === correctAnswers[questionName]) {
+                option.classList.add("correct");
+            }
+        });
+
+        if (selected) {
+            if (selected.value === correctAnswers[questionName]) {
+                score++;
+            } else {
+                selected.closest(".option").classList.add("wrong");
+            }
+        }
+
+        const explanation =
+            questionBlock.querySelector(".explanation");
+
+        if (explanation) {
+            explanation.style.display = "block";
+        }
+    }
+
+    scoreElement.textContent = score + " / " + totalQuestions;
+
+    const percentage = Math.round(
+        (score / totalQuestions) * 100
+    );
+
+    if (percentage >= 90) {
+        messageElement.textContent = "Өте жақсы нәтиже!";
+    } else if (percentage >= 70) {
+        messageElement.textContent = "Жақсы нәтиже!";
+    } else if (percentage >= 50) {
+        messageElement.textContent =
+            "Қанағаттанарлық нәтиже. Тақырыптарды тағы бір рет қайталаңыз.";
+    } else {
+        messageElement.textContent =
+            "Тақырыптарды қайта қарап, тестті тағы бір рет орындаңыз.";
+    }
+
+    result.style.display = "block";
+
+    result.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+});
+
+</script>
+
+</body>
+</html>
